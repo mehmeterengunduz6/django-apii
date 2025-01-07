@@ -31,7 +31,8 @@ DEBUG = True
 ALLOWED_HOSTS = [ 
     '127.0.0.1',
     '.vercel.app',
-    'localhost'
+    'localhost',
+    'erengunduzzz.pythonanywhere.com'
     ]  # Replace with your actual domain
 
 
