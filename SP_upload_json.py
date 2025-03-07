@@ -20,10 +20,11 @@ def SP_upload_json(file_path, date_value):
 
     # Process each record and save to database
     for item in data:
+        weight = item['weight'].replace(',', '.')
         stock = Stock(
             symbol=item["symbol"],
             name=item["name"],
-            weight=Decimal(item["weight"]),  # Convert weight to Decimal
+            weight=Decimal(weight),  # Convert weight to Decimal
             date=date_value,  # Use the date passed as input
             is_AFA=False,
         )
@@ -43,4 +44,4 @@ if __name__ == "__main__":
 
     SP_upload_json(file_path, date_value)
 
-# python SP_upload_json.py /path/to/your/json_file.json 2024-09-01
+# python3 SP_upload_json.py /path/to/your/json_file.json 2024-09-01

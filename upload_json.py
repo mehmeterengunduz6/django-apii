@@ -40,4 +40,4 @@ if __name__ == "__main__":
 
     upload_json(file_path, date_value)
 
-# python upload_json.py /path/to/your/json_file.json 2024-09-01
+# python3 upload_json.py /path/to/your/json_file.json 2024-09-01
